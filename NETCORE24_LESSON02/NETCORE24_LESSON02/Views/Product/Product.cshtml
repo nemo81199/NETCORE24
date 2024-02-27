@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+    var list = ViewData["list"] as List<Product>;
+}
+
+<h1>ProductSSSSS</h1>
+<table class="table table-bordered"> 
+    <thead class = "bg-danger">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in list)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
